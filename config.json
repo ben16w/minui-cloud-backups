@@ -1,0 +1,14 @@
+{
+    "label": "Cloud Backups",
+    "launch": "launch.sh",
+    "description": "Pak to to back up saves, screenshots and other folders to cloud storage providers like Google Drive and Dropbox.",
+    "settings": {
+        "source_folders": [
+            "/Saves",
+            "/Screenshots"
+        ],
+        "rclone_destination": "/MinUI-Cloud-Backups",
+        "rclone_backup_prefix": "Backup",
+        "rclone_remote_name": "trimui"
+    }
+}
