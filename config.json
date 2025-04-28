@@ -1,13 +1,4 @@
 {
-    "label": "Cloud Backups",
-    "launch": "launch.sh",
-    "description": "Pak to to back up saves, screenshots and other folders to cloud storage providers like Google Drive and Dropbox.",
-    "platforms": [
-        "miyoomini",
-        "my282",
-        "rg35xxplus",
-        "tg5040"
-    ],
     "settings": {
         "source_folders": [
             "/Saves",

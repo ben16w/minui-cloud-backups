@@ -1,0 +1,19 @@
+{
+    "name": "Cloud Backups",
+    "version": "1.0.1",
+    "type": "TOOL",
+    "description": "A Pak to to back up saves, screenshots and other folders to cloud storage providers like Google Drive and Dropbox.",
+    "author": "ben16w",
+    "repo_url": "https://github.com/ben16w/minui-cloud-backups",
+    "release_filename": "Cloud.Backups.pak.zip",
+    "banners": {
+        "BRICK": ".github/resources/banner.png"
+    },
+    "platforms": [
+        "tg5040"
+    ],
+    "update_ignore": [
+        "config.json"
+    ],
+    "launch": "launch.sh"
+}
