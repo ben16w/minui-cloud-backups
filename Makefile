@@ -5,9 +5,9 @@ PLATFORMS := h700 m17 magicmini miyoomini my282 my355 rg35xx rg35xxplus rgb30 tg
 
 MINUI_LIST_VERSION := 0.15.0
 MINUI_PRESENTER_VERSION := 0.13.0
-RCLONE_VERSION := 1.69.1
-JQ_VERSION := 1.7.1
-7ZZ_VERSION := 2409
+RCLONE_VERSION := 1.75.0
+JQ_VERSION := 1.8.2
+7ZZ_VERSION := 2602
 
 clean:
 	rm -f bin/*/minui-list* || true
@@ -57,13 +57,13 @@ bin/arm/jq:
 	mkdir -p bin/arm
 	curl -f -o bin/arm/jq -sSL https://github.com/jqlang/jq/releases/download/jq-$(JQ_VERSION)/jq-linux-armhf
 	chmod +x bin/arm/jq
-	curl -sSL -o bin/arm/jq.LICENSE "https://raw.githubusercontent.com/jqlang/jq/refs/heads/$(JQ_VERSION)/COPYING"
+	curl -sSL -o bin/arm/jq.LICENSE "https://raw.githubusercontent.com/jqlang/jq/refs/tags/jq-$(JQ_VERSION)/COPYING"
 
 bin/arm64/jq:
 	mkdir -p bin/arm64
 	curl -f -o bin/arm64/jq -sSL https://github.com/jqlang/jq/releases/download/jq-$(JQ_VERSION)/jq-linux-arm64
 	chmod +x bin/arm64/jq
-	curl -sSL -o bin/arm64/jq.LICENSE "https://raw.githubusercontent.com/jqlang/jq/refs/heads/$(JQ_VERSION)/COPYING"
+	curl -sSL -o bin/arm64/jq.LICENSE "https://raw.githubusercontent.com/jqlang/jq/refs/tags/jq-$(JQ_VERSION)/COPYING"
 
 bin/arm/rclone:
 	mkdir -p bin/arm
@@ -87,7 +87,7 @@ bin/arm64/rclone:
 
 bin/%/7zz:
 	mkdir -p bin/$*
-	curl -f -o bin/$*/7zip.tar.xz -sSL https://www.7-zip.org/a/7z$(7ZZ_VERSION)-linux-$*.tar.xz
+	curl -f -o bin/$*/7zip.tar.xz -sSL https://github.com/ip7z/7zip/releases/download/$(shell echo $(7ZZ_VERSION) | sed 's/../&./')/7z$(7ZZ_VERSION)-linux-$*.tar.xz
 	mkdir -p bin/$*/7zz_temp
 	tar -xf bin/$*/7zip.tar.xz -C bin/$*/7zz_temp
 	mv bin/$*/7zz_temp/7zz bin/$*/7zz
