@@ -420,9 +420,10 @@ main() {
         return 1
     fi
 
-    allowed_platforms="tg5040"
+    allowed_platforms="h700 m17 magicmini miyoomini my282 my355 rg35xx rg35xxplus rgb30 tg5040 tg5050 trimuismart zero28"
     if ! echo "$allowed_platforms" | grep -q "$PLATFORM"; then
         show_message "$PLATFORM is not a supported platform." 2
+        return 1
     fi
 
     chmod +x "$PAK_DIR/bin/$PLATFORM/minui-list"
