@@ -1,6 +1,6 @@
 {
   "name": "Cloud Backups",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "type": "TOOL",
   "description": "A Pak to to back up saves, screenshots and other folders to cloud storage providers like Google Drive and Dropbox.",
   "author": "ben16w",
