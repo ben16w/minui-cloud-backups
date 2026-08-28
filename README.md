@@ -10,7 +10,19 @@ MinUI Cloud Backups is a pak designed for MinUI and NextUI. Its aim is to simpli
 
 This pak is designed for the following MinUI Platforms and devices:
 
+- `h700`: Anbernic RG35XX SP, RG SP (NextUI only)
+- `m17`: M17
+- `magicmini`: MagicX XU Mini M
+- `miyoomini`: Miyoo Mini, Miyoo Mini Plus, Miyoo Mini Flip
+- `my282`: Miyoo A30
+- `my355`: Miyoo Flip
+- `rg35xx`: Anbernic RG35XX
+- `rg35xxplus`: Anbernic RG35XX Plus, RG-34XX, RG-35XX H, RG-35XX SP
+- `rgb30`: Powkiddy RGB30
 - `tg5040`: Trimui Brick (formerly `tg3040`), Trimui Smart Pro
+- `tg5050`: Trimui Smart Pro S (NextUI only)
+- `trimuismart`: Trimui Smart
+- `zero28`: MagicX Mini Zero 28
 
 The pak may work on other platforms and devices, but it has not been tested on them.
 
